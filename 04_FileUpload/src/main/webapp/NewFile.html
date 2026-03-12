@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!-- 
+		플젝 -> 빌드패스 -> lib(탭)    
+		
+		web(플젝) -> web-inf -> lib		
+		cos.jar
+
+		파일 업로드를 하는경우 html 에서 신경쓸게 단 2개
+		1. post
+		2. enctype(포장방식)을 multipart/form-data (박스 포장)으로
+
+ -->
+			<form action="FileUpload" method="post" enctype="multipart/form-data">
+				이름 : <input name="name">
+				사진 : <input name="pic" type="file">
+				기타 : <input name="etc" type="file">
+				<button>upload!</button>
+			</form>
+
+
+
+</body>
+</html>

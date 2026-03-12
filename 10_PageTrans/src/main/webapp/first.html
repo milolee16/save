@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+function go() {
+	location.href='second.jsp?a=5&b=10'
+}
+</script>
+</head>
+<body>
+<!-- 
+	request
+	
+	req.getParam("a")
+	
+	1. <a> 클릭 - get요청
+	2. js - loca.href 클릭 - get요청
+	3. form 속 버튼 클릭 - get요청, post요청
+
+ -->
+	<h1>first page~</h1>
+	
+	<a href="second.jsp?a=10&b=20">10 + 20</a>
+	
+	<h2 onclick="go()">5 + 10</h2>
+	
+	<form action="second.jsp">
+		<input name="a">
+		<input name="b">
+		<button>확인</button>
+	</form>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+</body>
+</html>

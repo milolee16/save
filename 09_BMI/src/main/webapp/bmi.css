@@ -1,0 +1,153 @@
+@charset "UTF-8";
+img{
+	max-width:80px; /* 50보다 작은건 원본 사이즈, 50보다 크면 50으로 */
+}
+td{
+	text-align: center;
+}
+table {
+	margin-left:auto;
+	margin-right:auto;
+	width: 400px;	
+	border: rgb(136, 143, 198) solid 3px; /* 테이블 외곽선 */
+}
+#titleTd{
+	font-size: 20pt;
+	color: white;
+	background-color:rgb(136, 143, 198);
+	font-weight: 900;
+	height: 50px;
+}
+.td1{
+	width: 60px;
+	height: 50px;
+	color: rgb(136, 143, 198);
+	font-size:14pt;
+	font-weight:700;
+	padding-left: 7px;
+}
+.txtInput, select {
+	outline: none; /* 클릭했을때 파랗게 되는거 */
+}
+.txtInput, select {
+	border: rgb(136, 143, 198) solid 2px;
+	width: 90%;
+	height: 30px;
+	font-size: 13pt;
+}
+#btn{
+	width: 50%;
+	height: 40px;
+	background-color: rgb(136, 143, 198);
+	color: white;
+	vertical-align: middle;
+}
+#btnTd{
+	height: 60px;
+}
+#uploadTd{
+	color: rgb(136, 143, 198);
+	font-size:14pt;
+	font-weight:700;
+	padding-left: 7px;
+	vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container{
+	
+	background: linear-gradient(45deg, #8080ff, pink);
+ 	border-radius:5px;
+	border: 10px double black;
+	height: 430px;
+	width: 450px;
+	font-size: 20pt;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+.head{
+	border: 3px solid black;
+ 	border-radius: 10px 10px 60px 60px / 10px 10px 60px 60px;
+ 	width:75%;
+	height: 50px;
+	font-size: 22pt;
+	font-weight: 800;
+	color: #2874c8;
+	text-shadow: 0 0 1vw #2874c8;
+	background-color: black;
+	margin: 15px auto 20px auto;
+}
+
+.head{
+  animation: head 1.5s ease-in-out infinite;
+	
+}
+
+@keyframes head {
+  0%,
+  100% {
+    text-shadow: 0 0 1vw #2874c8, 0 0 3vw #FA1C16, 0 0 10vw #FA1C16, 0 0 10vw #FA1C16, 0 0 .4vw #FED128, .5vw .4vw .1vw #806914;
+    color: #FED128;
+  }
+  50% {
+    text-shadow: 0 0 .5vw #800E0B, 0 0 1.5vw #800E0B, 0 0 5vw #800E0B, 0 0 5vw #800E0B, 0 0 .2vw #800E0B, .5vw .4vw .1vw #40340A;
+    color: #806914;
+  }
+}
+
+.info{
+	margin-top : 20px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	font-weight: 800;
+	color: #ffffe6;
+}
+
+.info div{
+	flex-basis: 100px;
+}
+
+.txtInput2{
+	font-size: 20pt;
+	height: 40px;
+	width: 230px;
+}
+
+.txtInput2-pic{
+	font-size: 12pt;
+	width: 238px;
+	
+}
+
+.btn2{
+	width: 200px;
+	height: 50px;
+	background-color: ivory;
+	font-size: 17pt;
+	font-weight:bold;
+	letter-spacing: 20px;
+	text-indent: 20px;
+	border-radius: 5px;
+ 	transition: 1s ease-in-out;
+}
+
+.btn2:hover{
+	transform: rotateY(360deg) scaleX(1.2);
+}

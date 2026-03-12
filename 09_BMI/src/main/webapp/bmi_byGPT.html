@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>BMI 검사</title>
+<link
+	href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap"
+	rel="stylesheet">
+	<link rel="stylesheet" href="bmi_byGPT.css">
+	<script type="text/javascript" src="validCheck.js"></script>
+	<script src="bmi_byGPT.js"></script>
+
+</head>
+<body>
+	<!-- 1. post   2. encType = muiltipart ...     -->
+	<form id="myForm" action="bmi_byGPT.jsp" method="post" enctype="multipart/form-data">
+		<div class="wrap">
+			<div>BMI 검사</div>
+
+			<div class="items">
+				<div>이름</div>
+				<div>
+					<input name="name" type="text" placeholder="필수, 2글자 이상">
+				</div>
+			</div>
+			<div class="items">
+				<div>키 (cm)</div>
+				<div>
+					<input name="height" type="number" placeholder="3자리 이상, 숫자만">
+				</div>
+			</div>
+			<div class="items">
+				<div>체중 (kg)</div>
+				<div>
+					<input name="weight" type="number" placeholder="숫자만, 공백x">
+				</div>
+			</div>
+			<div class="items">
+				<div>사진</div>
+				<div>
+					<input type="file" name="imgFile">
+				</div>
+			</div>
+
+			<div>
+				<button>계산</button>
+			</div>
+		</div>
+	</form>
+</body>
+</html>

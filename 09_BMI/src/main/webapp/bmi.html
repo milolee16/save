@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<link rel="stylesheet" href="bmi.css">
+<script type="text/javascript" src="check.js"></script>
+<script type="text/javascript" src="validCheck.js"></script>
+
+</head>
+<body>															
+	<form action="bmi.jsp" name="myForm" method="post" enctype="multipart/form-data"
+	onsubmit="return call()">
+		<table>
+			<tr>
+				<td id="titleTd" colspan="2">BMI 검사</td>
+			</tr>
+			<tr>
+				<td class="td1">이름</td>
+				<td><input name="n" class="txtInput" placeholder="필수, 2글자 이상"></td>
+			</tr>
+			<tr>
+				<td class="td1">키</td>
+				<td><input name="h" class="txtInput" placeholder="3자리 이상, 숫자만"></td>
+			</tr>
+			<tr>
+				<td class="td1">체중</td>
+				<td><input name="w" class="txtInput" placeholder="숫자만"></td>
+			</tr>
+			
+			 <tr>
+				<td id="uploadTd">사진</td>
+				<td><input name="f" type="file" id="upload"></td>
+			</tr>
+			
+			<tr>
+				<td id="btnTd" colspan="2"><button id="btn">계산</button></td>
+			</tr>
+		</table>
+	</form>
+
+
+
+
+<hr><hr>
+<hr><hr>
+
+	<form action="bmi.jsp" name="myForm" method="post"
+		enctype="multipart/form-data">
+		<div class="container">
+			<div class="head">BMI 검사(div)</div>
+			<div class="info">
+				<div>이름</div>
+				<div>
+					<input name="n" class="txtInput2" placeholder="필수, 2글자 이상">
+				</div>
+			</div>
+			<div class="info">
+				<div>키</div>
+				<div>
+					<input name="h" class="txtInput2" placeholder="3자리 이상, 숫자만">
+				</div>
+			</div>
+			<div class="info">
+				<div>체중</div>
+				<div>
+					<input name="w" class="txtInput2" placeholder="숫자만">
+				</div>
+			</div>
+			<div class="info">
+				<div>사진</div>
+				<div>
+					<input name="f" type="file" id="upload" class="txtInput2-pic">
+				</div>
+			</div>
+			<div class="info">
+			<div>
+				<button class="btn2">검사</button>
+			</div>
+			</div>
+		</div>
+	</form>
+
+</body>
+
+
+
+
+
+</html>
